@@ -8,3 +8,8 @@ body {
   border-radius: 12px;
   background: #020617;
 }
+@media (max-width: 500px) {
+  .container {
+    font-size: smaller;
+  }
+}

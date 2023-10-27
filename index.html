@@ -2,21 +2,25 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
     <div class="container-fluid"> <!--begin container-->
-        <div class="row"><!--begin row to sperate navbar elements-->
-            <nav class="navbar navbar-expand-lg " data-bs-theme="dark"> <!--begin navbar-->
+        <div class="row "><!--begin row to sperate navbar elements-->
+            <nav class="navbar navbar-expand-lg col-md-12  " data-bs-theme="dark"> <!--begin navbar-->
                 <div class="container-fluid">
 
-                    <a class="navbar-brand fs-2 fw-bold col-5 offset-1" href="./about.html">About<span
+                    <a class="navbar-brand fs-3 fw-bold col-5 offset-1" href="./about.html">About<span
                             class="text-warning">Me</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler btn-lg   " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class=" navbar-toggler-icon "></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ">
@@ -25,7 +29,7 @@
                                     href="index.html">HOME</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fw-semibold mx-3" href="./about.html">ABOUT</a>
+                                <a class="nav-link fw-semibold mx-3 " href="./about.html">ABOUT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fw-semibold mx-3" href="./resume.html">RESUME</a>
@@ -41,25 +45,29 @@
                     </div>
                 </div> <!--end row-->
             </nav> <!--end navbar-->
-            <main class="container"> <!--begin content-->
+            <main class="container-fluid"> <!--begin content-->
                 <div class="row" style="margin-top: 12% ;margin-left:10%;">
-                    <div class="col-7 ">
-                        <p class=" text-warning fs-3 ">Hello, Welcome</p>
-                        <p class="  text-light fs-1 fw-bold">I m Mohamed Maghzaoui</p>
-                        <pre class=" fs-4 fw-medium "
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                        <p class=" text-warning fw-bold fs-1  ">Hello, Welcome</p>
+                        <p class="  text-light fs-1  fw-bold">I m Mohamed Maghzaoui</p>
+                        <p class="  fw-medium fs-5 "
                             style="color: #6B7280;font-family: Lexend Deca;font-style: normal;">
-As an aspiring future Full Stack Engineer, I
-am passionate aboutcrafting seamless 
-digital experiences. 
-</pre>
+                            As an aspiring future Full Stack Engineer, I
+                            <br>
+                            am passionate aboutcrafting seamless
+                            <br>
+                            digital experiences.
+                        </p>
 
                         <button type="button" class="btn btn-warning  fw-medium btn-lg ">Contact Me</button>
 
 
 
+
                     </div>
-                    <div class="col-4" style="margin-top: -80px;">
-                        <img src=" photo.png" class="img-fluid  " alt="">
+                    <br>
+                    <div class="col  " style="margin-top: -10%;">
+                        <img src=" photo.png" class="img-fluid my-3  " alt="">
                     </div>
 
 
