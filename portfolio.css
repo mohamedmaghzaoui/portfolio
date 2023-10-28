@@ -9,10 +9,16 @@ body {
   background: #020617;
 }
 #text {
-  font-size: 25px;
+  font-size: 22px;
+}
+.title {
+  font-size: 22px;
 }
 @media (max-width: 500px) {
   #text {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .title {
+    font-size: 17px;
   }
 }
