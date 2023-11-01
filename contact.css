@@ -17,6 +17,7 @@ body {
 @media (max-width: 500px) {
   #text {
     font-size: 14px;
+    white-space: pre-wrap;
   }
   .text2 {
     font-size: 10px;
