@@ -17,6 +17,8 @@ body {
 @media (max-width: 500px) {
   #text {
     font-size: 14px;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
   .text2 {
     font-size: 10px;

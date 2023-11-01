@@ -17,6 +17,8 @@ body {
 @media (max-width: 500px) {
   #text {
     font-size: 13px;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
   .title {
     font-size: 17px;
