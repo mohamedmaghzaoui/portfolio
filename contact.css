@@ -1,6 +1,7 @@
 body {
   background: #020617;
 }
+/* custom placeholder class*/
 .form-control::placeholder {
   color: #f3f4f6;
   font-family: Lexend Deca;
@@ -8,19 +9,23 @@ body {
   font-weight: 500;
   line-height: 41px;
 }
+/*text id and text 2 class for responsive font size */
 #text {
   font-size: 22px;
 }
 .text2 {
   font-size: 17px;
 }
+/* name id to change height*/
 #name {
   height: 63px;
 }
+/* link id for custom style*/
 #link {
   text-decoration: none;
   color: white;
 }
+/* hover effect and pointer curson*/
 #link:hover {
   color: #ffc107;
 }
