@@ -11,7 +11,7 @@ submitForm = (event) => {
   const data = { name, message };
   //local server url
   const url = "http://localhost:3000/send-mail";
-  //post request
+  //post request using fetch api
   fetch(url, {
     method: "POST",
     headers: {
