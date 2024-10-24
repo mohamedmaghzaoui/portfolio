@@ -1,10 +1,13 @@
 body {
   background: #020617;
+  
+    font-family: 'Cherry Swash', cursive !important;
+
 }
 /* custom placeholder class*/
 .form-control::placeholder {
   color: #f3f4f6;
-  font-family: Lexend Deca;
+  font-family: 'Cherry Swash', cursive;
   font-style: normal;
   font-weight: 500;
   line-height: 41px;

@@ -1,0 +1,73 @@
+
+/* Animation for button  */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for image */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Animation for text  */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Move the text 50px to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move the text back to its original position */
+    }
+}
+
+/* Initially, all text is invisible (opacity 0) */
+.first-text, .second-text, .third-text {
+    opacity: 0; /* Hide all texts before the animation starts */
+}
+
+
+.first-text {
+    animation: fadeSlideIn 0.7s ease-in-out forwards; /* First text appears immediately */
+}
+
+.second-text {
+    animation: fadeSlideIn 0.7s ease-in-out 0.7s forwards; /* Second text starts after 1s */
+}
+
+.third-text {
+    animation: fadeSlideIn 0.7s ease-in-out 1.4s forwards; /* Third text starts after 2s */
+}
+
+
+/* Button animation on hover */
+.contact-btn  {
+    opacity: 0;
+    animation: fadeSlideIn 1s ease-in-out 2.1s forwards,pulse 1s infinite;
+    box-shadow: 0px 10px 20px rgba(255, 193, 7, 0.6);
+}
+
+/* Image animation on hover */
+img:hover {
+    animation: rotate 0.8s ease-in-out infinite alternate;
+    
+    transform: rotate(10deg);
+    transition: transform 0.3s;
+}
+
+body{
+    font-family: 'Cherry Swash', cursive;
+}
