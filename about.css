@@ -2,5 +2,6 @@ html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 body{
-    font-family: 'Cherry Swash', cursive !important;
+    font-family: 'Cherry Swash', serif
+ !important;
 }
