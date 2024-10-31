@@ -1,0 +1,95 @@
+
+
+.first-text, .second-text , .third-text,.fourth-text , .scroll-text-1, .scroll-text-2,.scroll-text-3,.scroll-text-4  {
+    opacity: 0; /* Hide all texts before the animation starts */
+    animation-fill-mode: forwards; /* Keep the final state after the animation ends */
+}
+
+
+.first-text ,.scroll-text-1.visible {
+    animation: fadeIn 0.7s ease-in-out forwards; /* First text appears immediately */
+}
+
+.second-text ,   .scroll-text-2.visible {
+    animation: fadeIn 0.7s ease-in-out forwards 0.7s; 
+}
+.third-text ,.scroll-text-3.visible {
+    animation: fadeSlideIn 0.7s ease-in-out forwards 1.4s; 
+}
+.fourth-text, .scroll-text-4.visible {
+    animation: fadeSlideIn 0.7s ease-in-out forwards 2.1s; 
+}
+/* Initial styles for skills */
+.skill {
+    opacity: 0; /* Hide initially */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+}
+
+/* Visible class that triggers the animation */
+.skill.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+  
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+       
+    }
+    100% {
+        opacity: 1;
+       
+    }
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move the text back to its original position */
+    }
+}
+
+
+
+/* General styles for the progress bar and icons */
+.progress-bar {
+    width: 0; /* Start at 0% width */
+    transition: width 1.5s ease-in-out; /* Smooth transition */
+}
+
+/* Keyframes for the icon appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide up effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-btn  {
+    opacity: 0;
+    animation: fadeSlideIn 1s ease-in-out 1.5s forwards,pulse 1s infinite;
+    box-shadow: 0px 10px 20px rgba(255, 193, 7, 0.6);
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

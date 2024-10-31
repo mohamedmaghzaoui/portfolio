@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="resume.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
                 <div class="container-fluid">
                     <!--navbar element-->
                     <a class="navbar-brand fs-2 fw-bold col-5 offset-1" href="about.html">About<span
-                            class="text-warning">Me</span></a>
+                            class="text-warning mx-2">Me</span></a>
                     <!--burger menu-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +49,12 @@
             <main class="container"> <!--begin content-->
                 <div style="margin-top: 5% ;margin-left:10%;"><!--begin resume-->
                     <!-- Début du secteur éducation -->
-                    <p class="fs-1 text-light fw-bold">Mon <span class="text-warning">Éducation</span></p>
+                    <p class="fs-1 text-light fw-bold first-text">Mon <span
+                            class="text-warning second-text">Éducation</span></p>
 
                     <div class="row"><!-- Ligne pour séparer les éléments -->
                         <!-- Premier élément éducation en utilisant une classe personnalisée nommée resume avec CSS -->
-                        <div class="resume col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11" style="height:80%">
+                        <div class="resume col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11 third-text" style="height:55%">
                             <!-- Responsive -->
                             <!-- Icône -->
                             <i style="margin-left: 40%;margin-top:5%;margin-bottom:10%"
@@ -66,20 +68,20 @@
                             <p style="margin-left: 30%;" class="fs-3 fw-bold text-warning">Baccalauréat</p>
                             <p style="margin-left: 10%;" class="fs-4  fw-bold text-light">Abouloubaba</p>
                             <!-- Texte pour la taille de police responsive -->
-                            <p id="text" class="mx-3 fw-medium " style="color: #6B7280 ;font-family: 'Cherry Swash', serif
+                            <p id="text" class="mx-3 fw-medium " style="color: #6B7280;font-family: 'Cherry Swash', serif
 ;font-style: normal;">
                                 J'ai réussi mon baccalauréat en mathématiques à l'école Abouloubaba.
                                 Cet accomplissement a posé des bases solides pour mon parcours académique et mes projets
                                 futurs.
                             </p>
-                            <br>
+
                             <!-- Lieu -->
                             <p class="text-end text-light fs-4">Gabès, Tunisie </p>
                         </div> <!-- Fin du premier élément éducation -->
 
                         <!-- Deuxième élément éducation -->
-                        <div class="resume col-xl-5 my-xl-0 my-lg-0 my-md-4 my-sm-4 my-4   offset-xl-1 offset-lg-1 col-lg-5 col-md-11 col-sm-11 col-11"
-                            style="height:80%">
+                        <div class="resume col-xl-5 my-xl-0 my-lg-0 my-md-4 my-sm-4 my-4 fourth-text   offset-xl-1 offset-lg-1 col-lg-5 col-md-11 col-sm-11 col-11"
+                            style="height:55%">
                             <!-- Icône -->
                             <i style="margin-left: 40%;margin-top:5%;margin-bottom:10%"
                                 class="fas fa-graduation-cap bg-warning fa-3x  img-fluid  "></i>
@@ -93,7 +95,7 @@
                             <p style="margin-left: 30%;" class="fs-3 fw-bold text-warning">Bachelor informatique </p>
                             <p style="margin-left: 10%;" class="fs-4  fw-bold text-light">École Hexagone</p>
                             <!-- Texte pour la taille de police responsive -->
-                            <p id="text" class=" mx-3  fw-medium " style="color: #6B7280 ;font-family: 'Cherry Swash', serif
+                            <p id="text" class=" mx-3  fw-medium " style="color: #6B7280;font-family: 'Cherry Swash', serif
 ;font-style: normal;">
                                 Je suis actuellement en troisième année d'un bachelor à l'école Hexagone de Versailles
                                 et je suis enthousiaste à l'idée des opportunités et des connaissances
@@ -109,9 +111,11 @@
                     <div class="row">
                         <!-- Experience -->
                         <div class="col-xl-5 col-lg-5 col-md-11 col-sm-11 col-11"> <!-- Responsive -->
-                            <p class="fs-1 text-light fw-bold">Mes <span class="text-warning">Expériences</span></p>
+                            <p class="fs-1 text-light fw-bold scroll-text-1">Mes <span
+                                    class="text-warning scroll-text-2">Expériences</span></p>
                             <!-- first experience-->
-                            <div class="resume " style="width: 103%"> <!-- Needed to add a little width -->
+                            <div class="resume scroll-text-3 " style="width: 103%">
+                                <!-- Needed to add a little width -->
                                 <!-- Icon -->
                                 <i style="margin-left: 40%; margin-top: 5%; margin-bottom: 10%;"
                                     class="fas fa-code bg-warning fa-3x img-fluid "></i>
@@ -125,7 +129,7 @@
                                 <p style="margin-left: 10%;" class="fs-4  fw-bold text-light">Mona
                                 </p>
                                 <!-- Text ID for responsive font size -->
-                                <p id="text" class=" mx-4 fw-medium " style="color: #6B7280 ;font-family: 'Cherry Swash', serif
+                                <p id="text" class=" mx-4 fw-medium " style="color: #6B7280;font-family: 'Cherry Swash', serif
 ;font-style: normal;">
                                     En tant que stagiaire chez Mona, j'ai développé des interfaces en React en suivant
                                     les meilleures pratiques, assuré la conception responsive des sites pour une
@@ -138,10 +142,10 @@
                             </div>
                             <br>
                             <!--second experience-->
-                            <div class="resume " style="width: 103%"> <!-- Needed to add a little width -->
+                            <div class="resume scroll-text-4" style="width: 103%"> <!-- Needed to add a little width -->
                                 <!-- Icon -->
                                 <i style="margin-left: 40%;margin-top:5%;margin-bottom:10%"
-                                    class="  fas fa-laptop-code bg-warning fa-3x  img-fluid  "></i>
+                                    class="  fas fa-laptop-code bg-warning fa-3x  img-fluid   "></i>
                                 <!-- Date -->
                                 <p class="fs-4 text-center fw-medium" style="color: #D1D5DB;font-family: 'Cherry Swash', serif
 ;">
@@ -150,7 +154,7 @@
                                 <p style="margin-left: 10%;" class="fs-4  fw-bold text-light">Sharing Technologies
                                 </p>
                                 <!-- Text ID for responsive font size -->
-                                <p id="text" class=" mx-4 fw-medium " style="color: #6B7280 ;font-family: 'Cherry Swash', serif
+                                <p id="text" class=" mx-4 fw-medium " style="color: #6B7280;font-family: 'Cherry Swash', serif
 ;font-style: normal;">
                                     En tant que développeur full stack chez Charing Technologies, j'ai contribué à la
                                     création d'une application web de gestion des échéances dotée d'un agenda intégré et
@@ -173,146 +177,221 @@
                             class="col-xl-5 my-xl-0 my-lg-0 my-md-4 my-sm-4 my-4   offset-xl-1 offset-lg-1 col-lg-5 col-md-11 col-sm-11 col-11">
                             <!--responsive-->
 
-                            <p class="fs-1 text-light fw-bold">Mes <span class="text-warning">Compétances</span></p>
+                            <p class="fs-1 text-light fw-bold scroll-text-1">Mes <span
+                                    class="text-warning scroll-text-2">Compétances</span></p>
                             <!-- skill-->
-                            <span class="text-light fs-5 ">HTML</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%"><span
-                                        class="fs-6 fw-bold">85%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">CSS</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"><span
-                                        class="fs-6 fw-bold">75%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">React Js</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 80%"><span
-                                        class="fs-6 fw-bold">80%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">Bootstrap</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 90%"><span
-                                        class="fs-6 fw-bold">90%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">PHP</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%"><span
-                                        class="fs-6 fw-bold">70%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">Symfony</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 80%"><span
-                                        class="fs-6 fw-bold">80%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">Node js</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%"><span
-                                        class="fs-6 fw-bold">85%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">SQL</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%"><span
-                                        class="fs-6 fw-bold ">70%</span></div>
-                            </div>
-                            <br>
-                            <!-- skill-->
-                            <span class="text-light fs-5">Mongo Db</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 80%"><span
-                                        class="fs-6 fw-bold ">80%</span></div>
-                            </div>
-                            <br>
+                            <div class="d-flex align-items-center  skill ">
 
-                            <!-- skill-->
-                            <span class="text-light fs-5">Python</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%"><span
-                                        class="fs-6 fw-bold">85%</span></div>
-                            </div>
-                            <br>
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" style="height: 55px;" src="./html-icon.svg"
+                                        alt="HTML Icon" class="img-fluid ">
 
-                            <!-- skill-->
-                            <span class="text-light fs-5">Ruby on rails</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%"><span
-                                        class="fs-6 fw-bold">70%</span></div>
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1 " style="height: 1.2rem;"
+                                    role="progressbar" aria-label="HTML skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%">
+                                        <span class="fs-6 fw-bold">85%</span>
+                                    </div>
+                                </div>
                             </div>
                             <br>
                             <!-- skill-->
-                            <span class="text-light fs-5">JAVA</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 65%"><span
-                                        class="fs-6 fw-bold">65%</span></div>
+                            <div class="d-flex align-items-center skill ">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./css-icon.svg" alt="HTML Icon" class="img-fluid  ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="CSS skill level" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%">
+                                        <span class="fs-6 fw-bold">75%</span>
+                                    </div>
+                                </div>
                             </div>
                             <br>
                             <!-- skill-->
-                            <span class="text-light fs-5">C#</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 65%"><span
-                                        class="fs-6 fw-bold">65%</span></div>
+                            <div class="d-flex align-items-center skill ">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./js-icon.svg" alt="HTML Icon" class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="JS skill level" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 80%">
+                                        <span class="fs-6 fw-bold">80%</span>
+                                    </div>
+                                </div>
                             </div>
                             <br>
                             <!-- skill-->
-                            <span class="text-light fs-5">Docker</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%"><span
-                                        class="fs-6 fw-bold">85%</span></div>
+                            <div class="d-flex align-items-center skill ">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./php-icon.svg" alt="HTML Icon" class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="PHP skill level" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%">
+                                        <span class="fs-6 fw-bold">70%</span>
+                                    </div>
+                                </div>
                             </div>
                             <br>
                             <!-- skill-->
-                            <span class="text-light fs-5">Linux</span>
-                            <div class="progress bg-dark bg-gradient" role="progressbar"
-                                aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 60%"><span
-                                        class="fs-6 fw-bold">60%</span></div>
+                            <div class="d-flex align-items-center skill ">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./react-icon.svg" alt="HTML Icon"
+                                        class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="react skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%">
+                                        <span class="fs-6 fw-bold">75%</span>
+                                    </div>
+                                </div>
                             </div>
                             <br>
+                            <!-- skill-->
+                            <div class="d-flex align-items-center skill ">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./sql-icon.svg" alt="HTML Icon" class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1 " style="height: 1.2rem;"
+                                    role="progressbar" aria-label="sql skill level" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 60%">
+                                        <span class="fs-6 fw-bold">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- skill-->
+                            <div class="d-flex align-items-center skill">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./python-icon.svg" alt="HTML Icon"
+                                        class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="python skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 65%">
+                                        <span class="fs-6 fw-bold">65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- skill-->
+                            <div class="d-flex align-items-center  skill">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./java-icon.svg" alt="HTML Icon" class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="java skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 60%">
+                                        <span class="fs-6 fw-bold">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- skill-->
+                            <div class="d-flex align-items-center  skill">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./linux-icon.svg" alt="HTML Icon"
+                                        class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="linux skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 60%">
+                                        <span class="fs-6 fw-bold">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- skill-->
+                            <div class="d-flex align-items-center skill">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./c-icon.svg" alt="HTML Icon" class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="c# skill level" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%">
+                                        <span class="fs-6 fw-bold">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex align-items-center skill">
+
+                                <span style="width: 10%;" class="text-light fs-5 d-flex align-items-center me-2 ">
+                                    <img style="height: 55px;" src="./docker-icon.svg" alt="HTML Icon"
+                                        class="img-fluid ">
+
+                                </span>
+
+                                <!-- Progress Bar -->
+                                <div class="progress bg-dark bg-gradient flex-grow-1" style="height: 1.2rem;"
+                                    role="progressbar" aria-label="docker skill level" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%">
+                                        <span class="fs-6 fw-bold">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="btn btn-outline-warning contact-btn fw-medium btn-lg my-5 mx-3">
+                                <a href="./MonCv.pdf" class="nav-link" download>
+                                    <i class="fas fa-download me-2"></i> <!-- Font Awesome download icon -->
+                                    Télécharger mon CV
+                                </a>
+                            </button>
+
 
                         </div> <!--end skills-->
+
 
                     </div> <!--end row-->
 
@@ -325,6 +404,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resume.js"></script>
 </body>
 
 </html>
