@@ -1,4 +1,4 @@
-Portfolio - Mohamed Maghzaoui
+Portfolio - Mohamed Maghzaoui                                
 This project is a portfolio website designed to showcase my skills, experience, and projects in web development. It was created using HTML, CSS, and Bootstrap to ensure a modern and responsive design.
 
 Project Details
