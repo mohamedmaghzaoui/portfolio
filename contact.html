@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="icon" href="/software.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -49,8 +52,9 @@
             <main class="container-fluid"><!--begin contact content-->
                 <div style="margin-top: 4%;"><!--begin contact and information sector-->
                     <!--text id for responsive font size-->
-                    <p class="fs-1 text-light fw-bold text-center ">Contactez <span class="text-warning">Moi</span></p>
-                    <p id="text" class="fw-medium text-center " style="color: #9CA3AF ;font-family: 'Cherry Swash', serif
+                    <p class="fs-1 text-light fw-bold text-center elm-1 ">Contactez <span
+                            class="text-warning">Moi</span></p>
+                    <p id="text" class="fw-medium text-center elm-2 " style="color: #9CA3AF ;font-family: 'Cherry Swash', serif
 ;font-style: normal;">
                         N'hésitez pas à me contacter. Je suis toujours ouvert pour discuter de nouveaux
                         <br>
@@ -58,63 +62,57 @@
                     </p>
                 </div>
 
-                <div style="margin-top: 3%;" class="row"> <!--begin row to divide elements-->
+                <div style="margin-top: 3%;"> <!--begin row to divide elements-->
 
-                    <div class="my-xl-4 offset-xl-1 offset-lg-1 col-xl-4 col-lg-4 col-sm-8 col-md-8 col-">
+                    <div class="my-xl-4 offset-xl-3 offset-lg-3 col-xl-9 col-lg-4 col-sm-8 col-md-8 col- row">
                         <!--information-->
                         <!--begin information sector-->
                         <!--use text 2 for responsive font size-->
-                        <p class="text-light fw-bold"><span id="text" class="text-warning">Adresse <span
-                                    class="text-warning fs-3">_ </span></span>
-                            <span class="text2">Boulevard Vauban , Guyancourt
-                                , France</span>
-                        </p>
-                        <p id="text" class="text-light fw-bold"><span class="text-warning">Téléphone <span
-                                    class="text-warning fs-3">_ </span></span>
-                            <span class="text2">0646973854</span>
-                        </p>
+                        <div class="row ">
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-3">
+                                <span class="fs-1 text-warning"><i class="fas fa-home icon"></i></span>
+                                <span class="text2 ms-1">Boulevard Vauban, Guyancourt, France</span>
+                            </div>
 
-                        <p id="text" class="text-light fw-bold"><span class="text-warning">E-mail <span
-                                    class="text-warning fs-3">_ </span></span>
-                            <span class="text2">mohamedmaghzaoui53@gmail.com</span>
-                        </p>
-                        <p id="text" class="text-light fw-bold"><span class="text-warning">Github <span
-                                    class="text-warning fs-3">_ </span></span>
-                            <!--link id for custom css-->
-                            <span class="text2"><a id="link"
-                                    href="https://github.com/mohamedmaghzaoui">https://github.com/mohamedmaghzaoui</a></span>
-                        </p>
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-4">
+                                <span class="fs-1 text-warning"><i class="fas fa-phone-alt icon"></i></span>
+                                <span class="text2 ms-2">0646973854</span>
+                            </div>
+
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-5">
+                                <span class="fs-1 text-warning"><i class="fas fa-envelope icon"></i></span>
+                                <span class="text2 ms-2">mohamedmaghzaoui53@gmail.com</span>
+                            </div>
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-6">
+                                <span class="fs-1 text-warning"><i class="fas fa-birthday-cake icon"></i></span>
+                                <span class="text2 ms-2">20</span>
+                            </div>
+
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-7">
+                                <span class="fs-1 text-warning"><i class="fab fa-github icon"></i></span>
+                                <span class="text2 ms-1"><a href="https://github.com/mohamedmaghzaoui"
+                                        id="link">https://github.com/mohamedmaghzaoui</a></span>
+                            </div>
 
 
-                    </div><!--end information sector-->
-                    <div class="col-xl-5 col-lg-5 col-sm-8 col-md-9 col-10 "><!--form sector-->
-                        <form id="contactForm">
-                            <!--action="http://localhost:3000/send-mail" and method ="post"  this will only be added in localhost for sending mail -->
-                            <!--name id to change height-->
-                            <input id="name" type="text" placeholder="Nom" name="name"
-                                class="form-control text-light fw-bold border-0" style="background: #1F2937 ;width:70%">
-                            <br>
-                            <textarea id="message" name="message" placeholder="Message"
-                                class="form-control text-light fw-bold border-0" name="" id="" cols="30" rows="8"
-                                style="background: #1F2937 ;"></textarea>
-                            <br>
-                            <button onclick="submitForm(event)" type="submit"
-                                class="btn btn-warning contact-btn fw-medium btn-lg my-xl-0 my-lg-0 my-4 ">Contactez
-                                Moi</button>
+                            <div class="text-light fw-bold col-xl-5 mb-4 elm-8">
+                                <span class="fs-1 text-warning"><i class="fab fa-linkedin icon"></i></span>
+                                <span class="text2 ms-2"><a id="link"
+                                        href="https://linkedin.com/in/mohamedmaghzaoui">Connectez-vous avec moi sur
+                                        LinkedIn</a></span>
+                            </div>
 
-                        </form>
-                    </div><!--end form sector-->
+
+                        </div>
+
+
+
+
+
+                    </div><!--end information sector-->Nom
+
                 </div><!--end information and form sectors-->
-                <!-- begin social sector-->
-                <div class="image-container offset-xl-5 offset-lg-5 offset-md-5 offset-sm-5 offset-3 my-3">
-                    <!--icons with custom class hover-->
-                    <img src="./facebook.png" alt="Image" class="img-fluid hover"><!--facebook-->
-                    <a href="https://www.linkedin.com/in/mohamed-maghzaoui-577044256/"><img src="./linkedin.png"
-                            alt="Image" class="img-fluid mx-4"></a><!--linkedin-->
 
-                    <img src="./youtube.png" alt="Image" class="img-fluid hover"><!--youtube-->
-
-                </div>
 
             </main>
 

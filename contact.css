@@ -12,7 +12,7 @@ body {
       transform: scale(1);
   }
   50% {
-      transform: scale(1.05);
+      transform: scale(1.15);
   }
   100% {
       transform: scale(1);
@@ -28,11 +28,60 @@ body {
       transform: translateX(0); /* Move the text back to its original position */
   }
 }
-.contact-btn  {
-  opacity: 0;
-  animation: fadeSlideIn 1s ease-in-out 1s forwards,pulse 1s infinite;
-  box-shadow: 0px 10px 20px rgba(255, 193, 7, 0.6);
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
+
+/* Apply the fade-in animation with increasing delays */
+.elm-1 {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.elm-2 {
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* delay of 0.2s */
+}
+
+.elm-3 {
+  animation: fadeIn 1s ease-in-out 1s forwards; /* delay of 0.4s */
+}
+
+.elm-4 {
+  animation: fadeIn 1s ease-in-out 1.5s forwards; /* delay of 0.6s */
+}
+
+.elm-5 {
+  animation: fadeIn 1s ease-in-out 2s forwards; /* delay of 0.8s */
+}
+
+.elm-6 {
+  animation: fadeIn 1s ease-in-out 2.5s forwards; /* delay of 1s */
+}
+
+.elm-7 {
+  animation: fadeIn 1s ease-in-out 3s forwards; /* delay of 1.2s */
+}
+
+.elm-8 {
+  animation: fadeIn 1s ease-in-out 3.5s forwards; /* delay of 1.4s */
+}
+
+/* Optional: For icons with fadeSlideIn */
+.icon {
+  background-color: transparent !important;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-in-out 1s forwards, pulse 1s infinite;
+}
+
+/* Optional: If you want to make sure the elements are initially hidden */
+.elm-1, .elm-2, .elm-3, .elm-4, .elm-5, .elm-6, .elm-7, .elm-8 {
+  opacity: 0;
+}
+
 
 /* custom placeholder class*/
 .form-control::placeholder {
@@ -66,11 +115,7 @@ body {
 img {
   cursor: pointer;
 }
-.hover:hover {
-  background-color: #ffc107; /* Bootstrap "warning" color */
 
-  transition: background-color 0.3s, color 0.3s;
-}
 
 @media (max-width: 500px) {
   #text {
