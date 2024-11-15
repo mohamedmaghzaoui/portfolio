@@ -61,6 +61,9 @@ body {
     animation: fadeSlideIn 1s ease-in-out 1.5s forwards,pulse 1s infinite;
     box-shadow: 0px 10px 20px rgba(255, 193, 7, 0.6);
 }
+#text{
+    font-size: 22px !important;
+}
 
 
 
