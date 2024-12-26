@@ -50,7 +50,7 @@
                     </div>
                 </div> <!--end row-->
             </nav> <!--end navbar-->
-            <main class="container-fluid"><!--begin contact content-->
+            <main class="container-fluid main-content"><!--begin contact content-->
                 <div style="margin-top: 4%;"><!--begin contact and information sector-->
                     <!--text id for responsive font size-->
                     <p class="fs-1 text-light fw-bold text-center elm-1 ">Contactez <span
@@ -65,7 +65,7 @@
 
                 <div style="margin-top: 3%;"> <!--begin row to divide elements-->
 
-                    <div class="my-xl-4 offset-xl-3 offset-lg-4 col-xl-9 col-lg-4 col-sm-8 col-md-8 col- row">
+                    <div class="my-xl-4 offset-xl-3 offset-lg-4 col-xl-9 col-lg-4 col-sm-8 col-md-8  row">
                         <!--information-->
                         <!--begin information sector-->
                         <!--use text 2 for responsive font size-->
@@ -103,6 +103,13 @@
                                         avec moi sur
                                         LinkedIn</a></span>
                             </div>
+                            <div id="chatbot-window" class="col-xl-1">
+                                <div id="chatbox">
+                                    <p class="botText"><span>Bonjour ! Posez-moi des questions sur moi.</span></p>
+                                </div>
+                                <input class="ms-3" id="userInput" type="text" placeholder="Tapez votre question...">
+                                <button class="btn btn-warning ms-3 my-3" onclick="getResponse()">Envoyer</button>
+                            </div>
 
 
                         </div>
@@ -111,7 +118,7 @@
 
 
 
-                    </div><!--end information sector-->Nom
+                    </div><!--end information sector-->
 
 
                 </div><!--end information and form sectors-->
@@ -121,13 +128,7 @@
                 </div>
 
                 <!-- Chatbot Window -->
-                <div id="chatbot-window">
-                    <div id="chatbox">
-                        <p class="botText"><span>Bonjour ! Posez-moi des questions sur moi.</span></p>
-                    </div>
-                    <input class="ms-3" id="userInput" type="text" placeholder="Tapez votre question...">
-                    <button class="btn btn-warning ms-3 my-3" onclick="getResponse()">Envoyer</button>
-                </div>
+
 
 
 

@@ -93,3 +93,13 @@
     margin-left: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+@media(max-width:694px){
+    #chatbot-window{
+        
+        width: 95%;
+    }
+    .main-content{
+        overflow-y: auto;
+        height: 1200px;
+    }
+}
