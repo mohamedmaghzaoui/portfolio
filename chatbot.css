@@ -68,34 +68,29 @@
 
 .userBubble {
     display: block;
-    background-color: #007BFF;  /* Blue for user messages */
+    background-color: #007BFF; /* Blue for user messages */
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
-    
-    word-wrap: break-word;
     text-align: left;
-    
- 
+    width: 100%; /* Ensure the bubble spans the container width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .botBubble {
-    display: inline-block;
-    background-color: #f1f0f0;  /* Light grey for bot messages */
+    display: block;
+    background-color: #f1f0f0; /* Light grey for bot messages */
     color: #333;
     padding: 10px 15px;
     border-radius: 20px;
-    max-width: 75%;
-    word-wrap: break-word;
     text-align: left;
-    
-    margin-left: 10px;
+    width: 100%; /* Ensure the bubble spans the container width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 @media(max-width:694px){
+    
     #chatbot-window{
-        
+        position: fixed;
         width: 95%;
     }
     .main-content{
