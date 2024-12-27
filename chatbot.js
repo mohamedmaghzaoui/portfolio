@@ -6,12 +6,15 @@ function toggleChatbot() {
     chatbotWindow.style.display = chatbotWindow.style.display === 'block' ? 'none' : 'block';
 }
 
-function getResponse() {
-    let userText = document.getElementById("userInput").value;
-    let chatbox = document.getElementById("chatbox");
-
+function normalizeText(text) {
+    return text
+        .toLowerCase()
+        .normalize("NFD") // Decompose accents (é -> e +  ́)
+        .replace(/[\u0300-\u036f]/g, "");  // Remove accents
+}
+function reply(userText){
     let botReply = "";
-    
+    let normalizedText = normalizeText(userText);
     // Initial greeting message if the chatbox is empty
     if (chatbox.innerHTML === "") {
         chatbox.innerHTML = `<p class="botText mt-2"><span>Bonjour ! Posez-moi des questions sur moi.</span></p>`;
@@ -19,106 +22,112 @@ function getResponse() {
 
     // Bot responses based on user input
     if (
-        userText.includes("qui es-tu") || 
-        userText.includes("présente-toi") || 
-        userText.includes("vous êtes qui") || 
-        userText.includes("qui êtes-vous") || 
-        userText.includes("hi qui êtes-vous")
+        normalizedText.includes("qui es-tu") || 
+        normalizedText.includes("présente") || 
+        normalizedText.includes("vous êtes") || 
+        normalizedText.includes("êtes-vous") || 
+        normalizedText.includes("qui")
     ) {
-        botReply = "Je suis Mohamed Maghzaoui, développeur web et étudiant en informatique.";
+        botReply = "Je suis Mohamed Maghzaoui,  étudiant en informatique à l'ecole hexagone.";
     } else if (
-        userText.includes("bonjour") || 
-        userText.includes("salut") || 
-        userText.includes("hello") || 
-        userText.includes("hi") || 
-        userText.includes("coucou")
+        normalizedText.includes("bonjour") || 
+        normalizedText.includes("salut") || 
+        normalizedText.includes("hello") || 
+        normalizedText.includes("hi") || 
+        normalizedText.includes("coucou")
     ) {
         botReply = "Bonjour ! Comment puis-je vous aider ?";
     } else if (
-        userText.includes("âge") || 
-        userText.includes("age") || 
-        userText.includes("quel âge as-tu") ||
-        userText.includes("quel âge avez-vous")
+        normalizedText.includes("age") || 
+        normalizedText.includes("quel âge as-tu") ||
+        normalizedText.includes("quel âge avez-vous")
     ) {
         botReply = "Bonjour ! J'ai 20 ans, un âge où je suis à la fois plein d'énergie et curieux d'apprendre de nouvelles choses.";
     } else if (
-        userText.includes("études") || 
-        userText.includes("etude") || 
-        userText.includes("où étudies-tu") || 
-        userText.includes("tu étudies où") || 
-        userText.includes("école")
+        normalizedText.includes("etude") || 
+        normalizedText.includes("où étudies-tu") || 
+        normalizedText.includes("tu étudies où") || 
+        normalizedText.includes("ecole")
     ) {
         botReply = "J'étudie à l'École Hexagone à Versailles en Bachelor informatique.";
     } else if (
-        userText.includes("compétences") || 
-        userText.includes("savoir-faire") || 
-        userText.includes("skills") || 
-        userText.includes("tu maîtrises quoi")
+        normalizedText.includes("compétences") || 
+        normalizedText.includes("savoir-faire") || 
+        normalizedText.includes("skills") || 
+        normalizedText.includes("maîtrises")
     ) {
         botReply = "Mes compétences incluent HTML, CSS, JavaScript, React, Node.js, Symfony, Docker, et Git.";
     } else if (
-        userText.includes("expérience") || 
-        userText.includes("travaillé") || 
-        userText.includes("expériences pro") || 
-        userText.includes("jobs")
+        normalizedText.includes("expérience") || 
+        normalizedText.includes("travaille") || 
+         
+        normalizedText.includes("jobs")
     ) {
         botReply = "J'ai travaillé comme développeur front-end chez Mona et comme développeur full-stack chez Sharing Technologies.";
     } else if (
-        userText.includes("projet") || 
-        userText.includes("travaux") || 
-        userText.includes("projets récents") || 
-        userText.includes("portfolio")
+        normalizedText.includes("projet") || 
+        normalizedText.includes("travaux") || 
+        normalizedText.includes("projets récents") || 
+        normalizedText.includes("portfolio")
     ) {
         botReply = "Mes projets incluent une station météo centralisée, un outil de gestion d'échéances, et un back-office avec Symfony.";
     } else if (
-        userText.includes("contact") || 
-        userText.includes("joindre") || 
-        userText.includes("comment vous joindre") || 
-        userText.includes("mail") || 
-        userText.includes("email") || 
-        userText.includes("téléphone")
+        normalizedText.includes("contact") || 
+        normalizedText.includes("joindre") || 
+        normalizedText.includes("comment vous joindre") || 
+        normalizedText.includes("mail") || 
+        normalizedText.includes("email") || 
+        normalizedText.includes("telephone")
     ) {
         botReply = "Vous pouvez me contacter à mohamedmaghzaoui53@gmail.com ou au 0646973854.";
     } else if (
-        userText.includes("intérêts") || 
-        userText.includes("loisirs") || 
-        userText.includes("passions") || 
-        userText.includes("hobbies")
+        normalizedText.includes("interets") || 
+        normalizedText.includes("loisirs") || 
+        normalizedText.includes("passions") || 
+        normalizedText.includes("hobbies")
     ) {
-        botReply = "Mes centres d'intérêt incluent la musique, les voyages, le sport, et le développement web.";
+        botReply = "Mes centres d'intérêt incluent la musique, les voyages, le sport, et le développement informatique.";
     } else if (
-        userText.includes("site web") || 
-        userText.includes("portfolio") || 
-        userText.includes("lien site") || 
-        userText.includes("votre site")
+        normalizedText.includes("site web") || 
+        normalizedText.includes("portfolio") || 
+        normalizedText.includes("lien site") || 
+        normalizedText.includes("votre site")
     ) {
         botReply = "Vous pouvez visiter mon site web à l'adresse suivante : https://mohamedmaghzaoui.online.";
     } else if (
-        userText.includes("linkedin") || 
-        userText.includes("réseaux sociaux") || 
-        userText.includes("linkedin profil") || 
-        userText.includes("réseau pro")
+        normalizedText.includes("linkedin") || 
+        normalizedText.includes("reseaux sociaux") || 
+        normalizedText.includes("linkedin profil") || 
+        normalizedText.includes("reseau pro")
     ) {
         botReply = "Voici mon LinkedIn : https://www.linkedin.com/in/mohamed-maghzaoui.";
     } else if (
-        userText.includes("langue") || 
-        userText.includes("parles") || 
-        userText.includes("langages parlés") || 
-        userText.includes("quelles langues")
+        normalizedText.includes("langue") || 
+        normalizedText.includes("parles") || 
+        normalizedText.includes("langages parles") || 
+        normalizedText.includes("quelles langues")
     ) {
         botReply = "Je parle couramment le français, l'anglais et l'arabe.";
     } else if (
-        userText.includes("objectif") || 
-        userText.includes("but") || 
-        userText.includes("vision") || 
-        userText.includes("projets futurs")
+        normalizedText.includes("objectif") || 
+        normalizedText.includes("but") || 
+        normalizedText.includes("vision") || 
+        normalizedText.includes("projets futurs")
     ) {
         botReply = "Mon objectif est de créer des projets innovants qui seront utilisés par des millions de personnes dans le monde entier.";
     } else {
         botReply = "Je ne suis pas sûr de cette réponse, mais n'hésitez pas à poser d'autres questions !";
     }
-    
+    return botReply
+}
 
+
+
+function getResponse() {
+    let chatReply=""
+    let userText = document.getElementById("userInput").value;
+    let chatbox = document.getElementById("chatbox");
+    chatReply= reply(userText)
     // User message with styling
     let userHtml = `<p class="btn btn-primary mt-2">
                         ${userText}
@@ -126,7 +135,7 @@ function getResponse() {
     
     // Bot message with styling
     let botHtml = `<p class="btn btn-secondary mt-2">
-                        ${botReply}
+                        ${chatReply}
                    </p>`;
     
     // Append messages to chatbox
