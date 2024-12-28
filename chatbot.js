@@ -9,7 +9,7 @@ function toggleChatbot() {
 function normalizeText(text) {
     return text
         .toLowerCase()
-        .normalize("NFD") // Decompose accents (é -> e +  ́)
+        .normalize("NFD") // Decompose accents (e -> e +  ́)
         .replace(/[\u0300-\u036f]/g, "");  // Remove accents
 }
 function reply(userText){
@@ -23,12 +23,12 @@ function reply(userText){
     // Bot responses based on user input
     if (
         normalizedText.includes("qui es-tu") || 
-        normalizedText.includes("présente") || 
+        normalizedText.includes("presente") || 
         normalizedText.includes("vous êtes") || 
-        normalizedText.includes("êtes-vous") || 
+        normalizedText.includes("etes-vous") || 
         normalizedText.includes("qui")
     ) {
-        botReply = "Je suis Mohamed Maghzaoui,  étudiant en informatique à l'ecole hexagone.";
+        botReply = "Je suis Mohamed Maghzaoui,  etudiant en informatique à l'ecole hexagone.";
     } else if (
         normalizedText.includes("bonjour") || 
         normalizedText.includes("salut") || 
@@ -42,35 +42,35 @@ function reply(userText){
         normalizedText.includes("quel âge as-tu") ||
         normalizedText.includes("quel âge avez-vous")
     ) {
-        botReply = "Bonjour ! J'ai 20 ans, un âge où je suis à la fois plein d'énergie et curieux d'apprendre de nouvelles choses.";
+        botReply = "Bonjour ! J'ai 20 ans, un âge où je suis à la fois plein d'energie et curieux d'apprendre de nouvelles choses.";
     } else if (
         normalizedText.includes("etude") || 
-        normalizedText.includes("où étudies-tu") || 
-        normalizedText.includes("tu étudies où") || 
+        normalizedText.includes("où etudies-tu") || 
+        normalizedText.includes("tu etudies où") || 
         normalizedText.includes("ecole")
     ) {
-        botReply = "J'étudie à l'École Hexagone à Versailles en Bachelor informatique.";
+        botReply = "J'etudie à l'ecole Hexagone à Versailles en Bachelor informatique.";
     } else if (
-        normalizedText.includes("compétences") || 
+        normalizedText.includes("competences") || 
         normalizedText.includes("savoir-faire") || 
         normalizedText.includes("skills") || 
         normalizedText.includes("maîtrises")
     ) {
-        botReply = "Mes compétences incluent HTML, CSS, JavaScript, React, Node.js, Symfony, Docker, et Git.";
+        botReply = "Mes competences incluent HTML, CSS, JavaScript, React, Node.js, Symfony, Docker, et Git.";
     } else if (
-        normalizedText.includes("expérience") || 
+        normalizedText.includes("experience") || 
         normalizedText.includes("travaille") || 
          
         normalizedText.includes("jobs")
     ) {
-        botReply = "J'ai travaillé comme développeur front-end chez Mona et comme développeur full-stack chez Sharing Technologies.";
+        botReply = "J'ai travaille comme developpeur front-end chez Mona et comme developpeur full-stack chez Sharing Technologies.";
     } else if (
         normalizedText.includes("projet") || 
         normalizedText.includes("travaux") || 
-        normalizedText.includes("projets récents") || 
+        normalizedText.includes("projets recents") || 
         normalizedText.includes("portfolio")
     ) {
-        botReply = "Mes projets incluent une station météo centralisée, un outil de gestion d'échéances, et un back-office avec Symfony.";
+        botReply = "Mes projets incluent une station meteo centralisee, un outil de gestion d'echeances, et un back-office avec Symfony.";
     } else if (
         normalizedText.includes("contact") || 
         normalizedText.includes("joindre") || 
@@ -86,7 +86,7 @@ function reply(userText){
         normalizedText.includes("passions") || 
         normalizedText.includes("hobbies")
     ) {
-        botReply = "Mes centres d'intérêt incluent la musique, les voyages, le sport, et le développement informatique.";
+        botReply = "Mes centres d'interêt incluent la musique, les voyages, le sport, et le developpement informatique.";
     } else if (
         normalizedText.includes("site web") || 
         normalizedText.includes("portfolio") || 
@@ -114,9 +114,9 @@ function reply(userText){
         normalizedText.includes("vision") || 
         normalizedText.includes("projets futurs")
     ) {
-        botReply = "Mon objectif est de créer des projets innovants qui seront utilisés par des millions de personnes dans le monde entier.";
+        botReply = "Mon objectif est de creer des projets innovants qui seront utilises par des millions de personnes dans le monde entier.";
     } else {
-        botReply = "Je ne suis pas sûr de cette réponse, mais n'hésitez pas à poser d'autres questions !";
+        botReply = "Je ne suis pas sûr de cette reponse, mais n'hesitez pas à poser d'autres questions !";
     }
     return botReply
 }
