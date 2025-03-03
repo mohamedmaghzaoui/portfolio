@@ -1,52 +1,49 @@
-#navbarNav a {
+#navbarNav .nav-link {
   position: relative;
   display: inline-block;
   text-shadow: 1px 0px rgba(0, 0, 0, 0.4);
-  transition: color 200ms;
-  transform-style: preserve-3d;
+  transition: color 200ms ease-in-out;
+  z-index: 1; /* Assure que le texte reste au-dessus */
 }
 
- a:hover {
-  color: #343e48;
+#navbarNav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+
 }
 
-#navbarNav a:after {
-  content: attr(data-title);
+#navbarNav .nav-link::after {
+  content: "";
   position: absolute;
-  top: 0; /* Align the top of the hover effect */
-  left: 0; /* Align the left of the hover effect */
-  right: 0; /* Ensure it stretches to the right */
-  bottom: 0; /* Ensure it covers the entire height */
-  padding: 5px 7px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #4795c3;
-  
-  color: transparent;
-  transform-origin: 50% 0%;
-  backface-visibility: hidden;
-  transform: translate3d(0px, 100%, 0px) rotateX(-112deg);
-  transition: all 200ms ease;
+  transform-origin: center;
+  transform: rotateX(90deg);
+  transition: transform 300ms ease-in-out;
   z-index: -1;
+  opacity: 0.8;
 }
 
-#navbarNav li:nth-child(2) a:after {
+/* Définition des couleurs pour chaque élément */
+#navbarNav li:nth-child(2) .nav-link::after {
   background: #ecc64b;
 }
 
-#navbarNav li:nth-child(3) a:after {
+#navbarNav li:nth-child(3) .nav-link::after {
   background: #20B2AA;
 }
 
-#navbarNav li:nth-child(4) a:after {
+#navbarNav li:nth-child(4) .nav-link::after {
   background: #f26667;
 }
 
-#navbarNav li:nth-child(5) a:after {
+#navbarNav li:nth-child(5) .nav-link::after {
   background: #BA55D3;
 }
 
-#navbarNav a:hover:after {
-  transform: rotateX(0deg) translateZ(0px);
+/* Animation au hover */
+#navbarNav .nav-link:hover::after {
+  transform: rotateX(0deg);
 }
-
-
-
