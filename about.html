@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+   <script>
+  const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+  const themes = {
+    default: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+    flatly: "https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/flatly/bootstrap.min.css",
+    sketchy: "https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/sketchy/bootstrap.min.css",
+    minty: "https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/minty/bootstrap.min.css",
+    darkly: "https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css",
+    zephyr: "https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/zephyr/bootstrap.min.css"
+  };
+  document.write(`<link id="themeStylesheet" rel="stylesheet" href="${themes[savedTheme]}">`);
+</script>
+
     <link rel="icon" href="/software.png" type="image/x-icon">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="navbar.css">
@@ -17,7 +29,20 @@
             <nav class="navbar navbar-expand-lg " data-bs-theme="dark"> <!--begin navbar-->
                 <div class="container-fluid">
                     <!--navbar elements-->
-                    <a class="navbar-brand fs-2 fw-bold col-5 offset-1 " href="about.html">About<span
+                    <!-- themes selector -->
+<div class="ms-auto">
+<select id="themeSelector" class="form-select w-auto bg-dark text-white border-secondary">
+  <option value="default">Classique</option>
+  <option value="flatly">Professionnel</option>
+  <option value="minty">Doux</option>
+  <option value="darkly">Sombre</option>
+  <option value="sketchy">Dessiné</option>
+  <option value="zephyr">Épuré</option>
+</select>
+
+  </div>
+  
+                    <a class="navbar-brand fs-2 fw-bold col-4 offset-1 " href="about.html">About<span
                             class="text-warning mx-2">Me</span></a>
                     <!--burger menu-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -96,6 +121,7 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./themes.js"></script>
 </body>
 
 </html>
